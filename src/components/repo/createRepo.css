@@ -1,0 +1,50 @@
+.create-repository-page {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.create-repository-box {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  background: #eef2f7;
+}
+
+.create-repository-box h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.create-repository-box input[type="text"],
+.create-repository-box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.create-repository-box textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-repository-box label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.create-repository-box button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}

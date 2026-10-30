@@ -1,0 +1,53 @@
+.issue-page {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.issue-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.issue-form {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.issue-title,
+.issue-description,
+.issue-status {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.issue-description {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.issue-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.update-button,
+.delete-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  opacity: 0.85;
+}

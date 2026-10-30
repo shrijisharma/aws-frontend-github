@@ -1,0 +1,251 @@
+.profile-page-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  color: whitesmoke;
+  gap: 30px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Left Profile */
+
+.user-profile-section {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  margin: 10px auto 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #586069;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+.name {
+  text-align: center;
+}
+
+.name h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.profile-bio {
+  text-align: center;
+  color: #b8c1cc;
+  margin: 8px 0 15px;
+}
+
+/* Follow */
+
+.follow-btn {
+  background-color: #20272d;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  color: whitesmoke;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+.follow-btn:hover {
+  background-color: #303840;
+}
+
+/* Followers */
+
+.follower {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.follower p {
+  margin: 0;
+}
+
+.follower strong {
+  color: white;
+}
+
+/* Edit Profile */
+
+.edit-profile-btn {
+  margin-top: 20px;
+  width: 100%;
+  height: 38px;
+  border-radius: 7px;
+  border: 1px solid #777;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+  background-color: #20272d;
+}
+
+/* Right Content */
+
+.profile-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Heatmap */
+
+.heat-map-section {
+  border: 1px solid #4a5562;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.heat-map-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Repositories */
+
+.profile-repositories {
+  border: 1px solid #4a5562;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.repositories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.repositories-header h2 {
+  margin: 0;
+}
+
+/* New Repository */
+
+.new-repo-btn {
+  padding: 8px 15px;
+  border: 1px solid #777;
+  border-radius: 7px;
+  background-color: #20272d;
+  color: white;
+  cursor: pointer;
+}
+
+.new-repo-btn:hover {
+  background-color: #303840;
+}
+
+/* Repository Cards */
+
+.profile-repo-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.profile-repo-card {
+  border: 1px solid #4a5562;
+  border-radius: 8px;
+  padding: 18px;
+  background-color: #20272d;
+}
+
+.profile-repo-card h3 {
+  margin: 0 0 10px;
+  color: #408ced;
+}
+
+.profile-repo-card p {
+  color: #b8c1cc;
+  font-size: 14px;
+  min-height: 35px;
+}
+
+.profile-repo-card span {
+  display: inline-block;
+  border: 1px solid #777;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 12px;
+  color: #ddd;
+}
+
+/* No Repository */
+
+.no-repositories {
+  color: #aaa;
+}
+
+/* Logout */
+
+#logout {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 9px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #20272d;
+  color: white;
+}
+
+#logout:hover {
+  border: 1px solid white;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+  .profile-page-wrapper {
+    padding: 25px;
+  }
+
+  .profile-repo-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .profile-page-wrapper {
+    display: block;
+    padding: 20px;
+  }
+
+  .user-profile-section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .follow-btn,
+  .edit-profile-btn {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-content {
+    width: 100%;
+  }
+}

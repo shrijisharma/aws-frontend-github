@@ -1,0 +1,102 @@
+/* #dashboard{
+    display:flex;
+    width:1080px;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+main{
+    padding-top:15px; ;
+} */
+#dashboard {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#dashboard aside,
+#dashboard main {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  background: #eef2f7;
+}
+
+#dashboard h2,
+#dashboard h3 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+/* Suggested Repositories */
+
+.suggested-repo {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.suggested-repo h4 {
+  margin: 0 0 6px;
+}
+
+.suggested-repo p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Search */
+
+#search {
+  margin-bottom: 20px;
+}
+
+#search input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+/* Your Repositories */
+
+.repository-card {
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.repository-card h4 {
+  margin: 0 0 7px;
+}
+
+.repository-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Links */
+
+#dashboard a {
+  text-decoration: none;
+}
+
+/* Upcoming Events */
+
+#dashboard ul {
+  padding-left: 20px;
+}
+
+#dashboard li {
+  margin-bottom: 12px;
+}

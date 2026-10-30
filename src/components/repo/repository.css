@@ -1,0 +1,91 @@
+.repository-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.repository-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.repository-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.repository-description {
+  color: #666;
+  font-size: 16px;
+}
+
+.repository-info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.repository-info p {
+  margin: 0;
+}
+
+.create-issue {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.create-issue h2 {
+  margin-top: 0;
+}
+
+.issue-input,
+.issue-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.issue-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.create-issue button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.issues-section h2 {
+  margin-bottom: 15px;
+}
+
+.issue-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 12px;
+}
+
+.issue-card h3 {
+  margin: 0 0 8px;
+}
+
+.issue-card a {
+  text-decoration: none;
+}
+
+.issue-card p {
+  color: #666;
+}
