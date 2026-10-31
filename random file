@@ -240,6 +240,7 @@ setSearchQuery(e.target.value)
       </main>
       <aside>
         <h3>Upcoming Events</h3>
+      
         <ul>
           <li>
             <p>Tech Conference-Dec 15</p>
@@ -256,3 +257,5 @@ setSearchQuery(e.target.value)
   ); 
 };
 export default Dashboard;
+
+  

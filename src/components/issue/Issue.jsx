@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./issue.css";
+const BASE_URL=import.meta.env.VITE_API_URL;
 
 const Issue = () => {
   const { id } = useParams();
@@ -15,7 +16,7 @@ const Issue = () => {
   const fetchIssue = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/issue/${id}`
+        `${BASE_URL}/issue/${id}`
       );
 
       const data = await response.json();
@@ -39,7 +40,7 @@ const Issue = () => {
   const updateIssue = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/issue/updated/${id}`,
+        `${BASE_URL}/issue/updated/${id}`,
         {
           method: "PUT",
           headers: {
@@ -68,7 +69,7 @@ const Issue = () => {
   const deleteIssue = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/issue/delete/${id}`,
+        `${BASE_URL}/issue/delete/${id}`,
         {
           method: "DELETE",
         }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./dashboard.css";
 import Navbar from "../Navbar";
+const BASE_URL=import.meta.env.VITE_API_URL;
 
 const Dashboard = () => {
   const [repositories, setRepositories] = useState([]);
@@ -15,7 +16,7 @@ const Dashboard = () => {
     const fetchRepositories = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/repo/user/${userId}`
+          `${BASE_URL}/repo/user/${userId}`
         );
 
         const data = await response.json();
@@ -38,7 +39,7 @@ const Dashboard = () => {
     const fetchSuggestedRepositories = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/repo/all`
+          `${BASE_URL}/repo/all`
         );
 
         const data = await response.json();

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./createRepo.css";
+const BASE_URL=import.meta.env.VITE_API_URL;
 
 const CreateRepository = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const CreateRepository = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/repo/create",
+        `${BASE_URL}/repo/create`,
         {
           method: "POST",
           headers: {

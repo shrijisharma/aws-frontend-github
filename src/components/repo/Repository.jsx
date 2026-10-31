@@ -11,6 +11,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./repository.css";
+const BASE_URL=import.meta.env.VITE_API_URL;
 
 const Repository = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ const Repository = () => {
   const fetchRepository = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/repo/${id}`
+        `${BASE_URL}/repo/${id}`
       );
 
       const data = await response.json();
@@ -41,7 +42,7 @@ const checkStarred = async () => {
 
   try {
     const response = await fetch(
-      `http://localhost:3000/star/check/${id}`,
+      `${BASE_URL}/star/check/${id}`,
       {
         method: "POST",
         headers: {
@@ -69,7 +70,7 @@ const checkStarred = async () => {
   const createIssue = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/issue/create/${id}`,
+        `${BASE_URL}/issue/create/${id}`,
         {
           method: "POST",
           headers: {
@@ -99,7 +100,7 @@ const toggleStar = async () => {
 
   try {
     const response = await fetch(
-      `http://localhost:3000/${
+      `${BASE_URL}/${
         isStarred ? "unstar" : "star"
       }/${id}`,
       {

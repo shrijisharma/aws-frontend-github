@@ -2,6 +2,8 @@ import {useState} from "react";
 import axios from "axios";
 import { useAuth } from "../../authContext";
 
+const BASE_URL=import.meta.env.VITE_API_URL;
+
 import { PageHeader } from "@primer/react";
 // import { Box, Button } from "@primer/react";
 import {  Button } from "@primer/react";
@@ -28,7 +30,7 @@ const Login = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:3000/login", {
+      const res = await axios.post(`${BASE_URL}/login`, {
         email: email,
         password: password,
       });
